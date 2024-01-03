@@ -1,0 +1,6 @@
+C:\Users\Dicta\source\repos\TodoList\TodoList_DB\bin\Debug\TodoList_DB.dacpac
+C:\Users\Dicta\source\repos\TodoList\TodoList_DB\bin\Debug\TodoList_DB.dll
+C:\Users\Dicta\source\repos\TodoList\TodoList_DB\bin\Debug\TodoList_DB.pdb
+C:\Users\Dicta\source\repos\TodoList\TodoList_DB\obj\Debug\TodoList_DB.sqlproj.AssemblyReference.cache
+C:\Users\Dicta\source\repos\TodoList\TodoList_DB\obj\Debug\TodoList_DB.dll
+C:\Users\Dicta\source\repos\TodoList\TodoList_DB\obj\Debug\TodoList_DB.pdb

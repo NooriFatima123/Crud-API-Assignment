@@ -1,0 +1,111 @@
+﻿@page "/Login"
+@using System.Text.Json.Serialization
+@using System.Text.Json
+@using System.Text
+@using TodoList.Shared
+@inject NavigationManager NavManager
+@layout DashboardLayout
+<style>
+    input:focus {
+        border-color: #228B22 !important;
+        box-shadow: 0 0 5px rgba(34, 139, 34, 0.5) !important;
+    }
+    h1.title {
+        text-align: center;
+        font-size: 80px;
+        font-weight: bold;
+        background: linear-gradient(to right, #228B22, #fff); 
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+</style>
+
+<div class="container mt-5">
+    <h1 class="title">TodoList</h1> 
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card mt-4">
+                <div class="card-header text-center" style="background-color: #228B22; color: #fff; margin-top: 10px;">
+                    <h4>Login</h4>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group" style="margin-top: 10px;">
+                            <label for="Email">Email</label>
+                            <input type="text" class="form-control" id="email" @bind="user.Email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group" style="margin-top: 10px;">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" @bind="user.Password" placeholder="Enter your password" required>
+                        </div>
+                        <div class="form-group mb-4" style="margin-top: 10px;">
+                            <button type="submit" class="btn btn-success btn-block" style="background-color: #228B22;" onclick="onsubmit">
+                                Login
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="card-footer text-center" style="margin-top: 10px;">
+                    <p>Don't have an account? <a href="SignUp" data-toggle="collapse">Sign up</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="signupModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: #228B22; color: #fff; margin-top: 10px;">
+                <h5 class="modal-title">Sign Up</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Signup form can be placed here...</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    UserDto user = new UserDto();
+
+
+    public async Task onsubmit()
+    {
+        using (HttpClient client = new HttpClient())
+        {
+            try
+            {
+                string url = "https://localhost:7097/Login/SignIn";
+                string jsonBody = JsonSerializer.Serialize(user);
+
+                StringContent data = new StringContent(jsonBody, Encoding.UTF8, "application/json");
+                HttpResponseMessage response = await client.PostAsync(url,data);
+                if (response.IsSuccessStatusCode)
+                {
+                    // Read and print the content of the response
+                    string content = await response.Content.ReadAsStringAsync();
+                    UserDto user = JsonSerializer.Deserialize<UserDto>(content);
+                    if (user != null)
+                    {
+                        NavManager.NavigateTo("/Dashboard");
+                    }
+                    Console.WriteLine(content);
+                }
+                else
+                {
+                    // Print the status code if the request was not successful
+                    Console.WriteLine($"Request failed with status code: {response.StatusCode}");
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions
+                Console.WriteLine($"An error occurred: {ex.Message}");
+            }
+        }
+    }
+}
