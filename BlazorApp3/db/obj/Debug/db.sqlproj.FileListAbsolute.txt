@@ -1,0 +1,6 @@
+C:\Users\Student\source\repos\New folder\New folder\BlazorApp3\db\bin\Debug\db.dacpac
+C:\Users\Student\source\repos\New folder\New folder\BlazorApp3\db\bin\Debug\db.dll
+C:\Users\Student\source\repos\New folder\New folder\BlazorApp3\db\bin\Debug\db.pdb
+C:\Users\Student\source\repos\New folder\New folder\BlazorApp3\db\obj\Debug\db.sqlproj.AssemblyReference.cache
+C:\Users\Student\source\repos\New folder\New folder\BlazorApp3\db\obj\Debug\db.dll
+C:\Users\Student\source\repos\New folder\New folder\BlazorApp3\db\obj\Debug\db.pdb

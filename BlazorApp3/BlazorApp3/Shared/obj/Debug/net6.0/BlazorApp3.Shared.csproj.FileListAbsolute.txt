@@ -1,0 +1,12 @@
+C:\Users\Student\source\repos\New folder\New folder\BlazorApp3\BlazorApp3\Shared\bin\Debug\net6.0\BlazorApp3.Shared.deps.json
+C:\Users\Student\source\repos\New folder\New folder\BlazorApp3\BlazorApp3\Shared\bin\Debug\net6.0\BlazorApp3.Shared.dll
+C:\Users\Student\source\repos\New folder\New folder\BlazorApp3\BlazorApp3\Shared\bin\Debug\net6.0\BlazorApp3.Shared.pdb
+C:\Users\Student\source\repos\New folder\New folder\BlazorApp3\BlazorApp3\Shared\obj\Debug\net6.0\BlazorApp3.Shared.csproj.AssemblyReference.cache
+C:\Users\Student\source\repos\New folder\New folder\BlazorApp3\BlazorApp3\Shared\obj\Debug\net6.0\BlazorApp3.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Student\source\repos\New folder\New folder\BlazorApp3\BlazorApp3\Shared\obj\Debug\net6.0\BlazorApp3.Shared.AssemblyInfoInputs.cache
+C:\Users\Student\source\repos\New folder\New folder\BlazorApp3\BlazorApp3\Shared\obj\Debug\net6.0\BlazorApp3.Shared.AssemblyInfo.cs
+C:\Users\Student\source\repos\New folder\New folder\BlazorApp3\BlazorApp3\Shared\obj\Debug\net6.0\BlazorApp3.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Student\source\repos\New folder\New folder\BlazorApp3\BlazorApp3\Shared\obj\Debug\net6.0\BlazorApp3.Shared.dll
+C:\Users\Student\source\repos\New folder\New folder\BlazorApp3\BlazorApp3\Shared\obj\Debug\net6.0\refint\BlazorApp3.Shared.dll
+C:\Users\Student\source\repos\New folder\New folder\BlazorApp3\BlazorApp3\Shared\obj\Debug\net6.0\BlazorApp3.Shared.pdb
+C:\Users\Student\source\repos\New folder\New folder\BlazorApp3\BlazorApp3\Shared\obj\Debug\net6.0\ref\BlazorApp3.Shared.dll
